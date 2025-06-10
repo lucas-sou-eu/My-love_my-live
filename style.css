@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    text-align: center;
+    background-color: black;
+@font-face{
+    font-family: "Angelia";
+    src: url("Angelia Beauty.ttf") format("truetype");
+}
+h1 {
+  color: red;
+  font-size: 300%;
+  font-family: Comic Sans MS, cursive;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+p{
+    color: white;
+    font-family: Currier Courier New, cursive;
+    font-size: 200%;
+}
+
+.bloco1 {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.icone1 {
+  width: 150px; /* ou o tamanho que quiser */
+  height: 100;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+.bloco2 {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-direction: row-reverse;
+}
+
+.icone2 {
+  width: 150px; /* ou o tamanho que quiser */
+  height: 100;
+  margin-right: 20px;
+  border-radius: 50px; /* opcional, só pra dar um charme */
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: black;
+  font-size: 160%;
+  font-family: Comic Sans MS, cursive;
+  margin: 0;
+  text-align: center;
+}
+
+
+.videozinho {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+.player-wrapper {
+  width: 50%;
+  max-width: 400px;
+  margin: 30px auto;
+  background: #220011;
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px hotpink;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#playPause {
+  background: none;
+  border: none;
+  color: hotpink;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.barra-container {
+  flex: 1;
+  height: 8px;
+  background: #444;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+#barra-progresso {
+  height: 100%;
+  width: 0%;
+  background: hotpink;
+  transition: width 0.1s;
+}
+
+#tempo-atual,
+#tempo-total {
+  font-size: 12px;
+  width: 40px;
+}
+
+.imagem-girando {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background-image: url("img1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 15px hotpink;
+  animation: girarHorario 6s linear infinite; /* aqui o giro certo */
+}
+
+@keyframes girarHorario {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* SENTIDO HORÁRIO */
+  }
+}

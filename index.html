@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meu docinho</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: sans-serif;
+      }
+
+      .coraçao {
+        position: fixed;
+        top: -50px;
+        font-size: 24px;
+        color: red;
+        animation: cair linear infinite;
+        pointer-events: none;
+        z-index: 9999;
+      }
+
+      @keyframes cair {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <script>
+      function criarCoracao() {
+        const coracao = document.createElement("div");
+        coracao.classList.add("coraçao");
+        coracao.innerText = "❤️";
+
+        coracao.style.left = Math.random() * 100 + "vw";
+        coracao.style.animationDuration = (Math.random() * 2 + 3) + "s";
+        coracao.style.fontSize = (Math.random() * 20 + 20) + "px";
+
+        document.body.appendChild(coracao);
+
+        setTimeout(() => {
+          coracao.remove();
+        }, 5000);
+      }
+    
+      setInterval(criarCoracao, 300);
+    </script>
+    <h1>Oie, lindinha<br> Liga o som primeiro ta bom</h1>
+    <div class="player-wrapper">
+      <div class="imagem-girando" id="imagemGirando"></div>
+      <audio id="audio" src="musica.mp3"></audio>
+      <div class="controles">
+        <button id="playPause">▶</button>
+        <span id="tempo-atual">00:00</span>
+        <div class="barra-container">
+          <div id="barra-progresso"></div>
+        </div>
+        <span id="tempo-total">00:00</span>
+      </div>
+    </div>
+    <h1>frase romantica primeiro sksk</h1>
+    <div class="container">
+      <img src="img3.jpg" alt="Imagem de fundo">
+      <h1>chega um momento em que a palavra alegria muda de siguinificado.<br>A minha alegria agora tem nome, sobrenome, cpf e o mais lindo de todos os sorrisos</h1>
+    </div>
+    <div class="bloco1">
+      <img src="img6.jpg" alt="Descrição" class="icone1" />
+      <p> Eu conheci vc a tão pouco tempo.</p>
+    </div>
+    <div class="bloco2">
+      <img src="img1.jpg" alt="Descrição" class="icone2" />
+      <p>Mas eu adoro muito estar ao seu lado</p>
+    </div>
+    <div class="bloco1">
+      <img src="img4.jpg" alt="Descrição" class="icone1" />
+      <p>Adoro muito ver o seu sorriso.</p>
+     </div>
+    <div class="bloco2">
+      <img src="img5.jpg" alt="Descrição" class="icone2" />
+      <p>Gosto muito do seu lindo olhar.</p>
+    </div>
+    <div class="container">
+      <img src="img7.jpg" alt="Imagem de fundo">
+      <h1>Cada minuto que eu passo ao seu lado é o melhor momento da minha vida.<br> Não sei como é possivel, mas eu me apaixono mais por você a cada dia!</h1>
+    </div>
+    <h1>tá vendo?</h1>
+    <div class="bloco-video-texto">
+      <video src="vd1.mp4" autoplay muted loop playsinline class="videozinho"></video>
+      <p class="textinho">esse seu sorriso é realmente lindo!</p>
+    </div>
+    <h1>tenho mais coisas pra te falar!</h1>
+        <div class="bloco1">
+      <img src="img8.jpg" alt="Descrição" class="icone1" />
+      <p>Quer saber?<br>Eu amo os seus abraços.</p>
+     </div>
+    <div class="bloco2">
+      <img src="img10.jpg" alt="Descrição" class="icone1" />
+      <p>Amo os seus beijinhos.</p>
+     </div>
+    <div class="container">
+      <img src="img12.jpg" alt="Imagem de fundo">
+      <h1><span style="color:red";>AMO</span> muito o seu cheirinho.<br>
+      Amo muito os momentos que passo com você!<br>
+      Amo as nossas conversas, muitas delas são por mensagens, mas eu gosto mesmo assim, apesar da distancia, você ainda consegue tirar um sorriso de mim.<br>Amo estar com <span style="color: red";>VOCÊ</span> 
+      </h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
