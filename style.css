@@ -11,7 +11,7 @@ body{
 }
 h1 {
   color: red;
-  font-size: 300%;
+  font-size: 400%;
   font-family: Comic Sans MS, cursive;
   text-align: center;
   padding: 0;
@@ -20,7 +20,7 @@ h1 {
 p{
     color: white;
     font-family: Currier Courier New, cursive;
-    font-size: 200%;
+    font-size: 300%;
 }
 
 .bloco1 {
@@ -69,7 +69,7 @@ p{
   transform: translate(-50%, -50%);
   
   color: black;
-  font-size: 160%;
+  font-size: 200%;
   font-family: Comic Sans MS, cursive;
   margin: 0;
   text-align: center;
@@ -78,8 +78,30 @@ p{
 
 .videozinho {
   width: 200px;
-  max-width: 100%;
+  max-width: auto;
   border-radius: 50px;
+}
+.bloco-video-texto2{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+.videozinho2{
+  width: 100%;
+  max-width: 200%;
+  border-radius: 50px;
+}
+.bloco-video-texto2 p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 200%;
+  font-family: Comic Sans MS, cursive;
+  margin: 0;
+  text-align: center;
 }
 
 .player-wrapper {
